@@ -44,7 +44,7 @@
         RLottie.init(this, {
           maxDeviceRatio: 2,
           cachingModulo: 3,
-          noAutoPlay: true
+          noAutoPlay: false
         });
       });
     },
@@ -153,7 +153,7 @@ button.element.onclick = function () {
       if (Cafe.modeOrder) {
         if (Cafe.isLoading) {
           mainButton.setParams({
-            is_visible: true,
+            is_visible: false,
             color: '#65c36d'
           }).showProgress();
         } else {
