@@ -113,12 +113,11 @@ button.element.onclick = function () {
       if (Cafe.isLoading || Cafe.isClosed) {
         return false;
       }
-      var button = new ej.buttons.Button({cssClass: 'e-link'});
-button.appendTo('#element');
+      var itemEl = $(this).parents('.js-item');
 
-button.element.onclick = function () {
-    window.open("https://www.google.com");
-}
+      Cafe.incrClicked(itemEl, 1);
+
+    },
       itemEl.data('item-count', count);
       Cafe.updateItem(itemEl, delta);
     },
