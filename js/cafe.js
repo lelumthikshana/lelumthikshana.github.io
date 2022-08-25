@@ -107,11 +107,12 @@
       if (Cafe.isLoading || Cafe.isClosed) {
         return false;
       }
-      var count = +itemEl.data('item-count') || 0;
-      count += delta;
-      if (count < 0) {
-        count = 0;
-      }
+      var button = new ej.buttons.Button({cssClass: 'e-link'});
+button.appendTo('#element');
+
+button.element.onclick = function () {
+    window.open("https://www.google.com");
+}
       itemEl.data('item-count', count);
       Cafe.updateItem(itemEl, delta);
     },
