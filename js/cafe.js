@@ -116,7 +116,7 @@
       Cafe.updateItem(itemEl, delta);
     },
     formatPrice: function(price) {
-      return '$' + Cafe.formatNumber(price / 1000, 2, '.', ',');
+      return 'Read';
     },
     formatNumber: function(number, decimals, decPoint, thousandsSep) {
       number = (number + '').replace(/[^0-9+\-Ee.]/g, '')
@@ -176,7 +176,7 @@
         var itemEl = $(this)
         var price = +itemEl.data('item-price');
         var count = +itemEl.data('item-count') || 0;
-        total_price += price * count;
+        total_price += learnbit;
       });
       Cafe.canPay = total_price > 0;
       Cafe.totalPrice = total_price;
