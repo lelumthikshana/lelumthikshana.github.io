@@ -56,9 +56,15 @@
     },
     eIncrClicked: function(e) {
       e.preventDefault();
-      var itemEl = $(this).parents('.js-item');
-      Cafe.incrClicked(itemEl, 1);
-    },
+      var button = new ej.buttons.Button({cssClass: 'e-link'});
+
+button.appendTo('#element');
+
+button.element.onclick = function () {
+
+    window.open("https://www.google.com");
+
+}
     eDecrClicked: function(e) {
       e.preventDefault();
       var itemEl = $(this).parents('.js-item');
