@@ -57,12 +57,12 @@
     eIncrClicked: function(e) {
       e.preventDefault();
       var itemEl = $(this).parents('.js-item');
-      Cafe.incrClicked(itemEl, 1);
+      Cafe.incrClicked(itemEl, 0);
     },
     eDecrClicked: function(e) {
       e.preventDefault();
       var itemEl = $(this).parents('.js-item');
-      Cafe.incrClicked(itemEl, -1);
+      Cafe.incrClicked(itemEl, 0);
     },
     eEditClicked: function(e) {
       e.preventDefault();
@@ -158,7 +158,7 @@
         } else {
           mainButton.setParams({
             is_visible: !!Cafe.canPay,
-            text: 'PAY ' + Cafe.formatPrice(Cafe.totalPrice),
+            text: 'LeanBits',
             color: '#31b545'
           }).hideProgress();
         }
