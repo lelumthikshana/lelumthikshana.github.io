@@ -156,15 +156,15 @@ body {
     display: inline-block;
     font-family: var(--default-font);
     font-weight: 700;
-    font-size: 4px;
+    font-size: 14px;
     line-height: 18px;
     padding: 6px 16px;
     height: 30px;
     border-radius: 7px;
     box-sizing: border-box;
-    background-color: #ff559e;
+    background-color: var(--main-color);
     text-transform: uppercase;
-    color: #ff559e;
+    color: #fff;
     outline: none;
     border: none;
   }
@@ -190,7 +190,7 @@ body {
     width: 80px;
   }
   .selected .cafe-item-incr-button {
-    width: 80px;
+    width: 38px;
   }
   .cafe-item-decr-button {
     position: relative;
