@@ -158,7 +158,7 @@
         } else {
           mainButton.setParams({
             is_visible: !!Cafe.canPay,
-            text: 'PAY ' + Cafe.formatPrice(Cafe.totalPrice),
+            text: 'LearnBits',
             color: '#31b545'
           }).hideProgress();
         }
