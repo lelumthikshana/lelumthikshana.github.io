@@ -12,8 +12,8 @@ body {
     min-width: 100%;
   
     --default-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    --block-bg-color: var(--tg-theme-bg-color);
-    --bg-color: #ebedf0;
+    --block-bg-color: #FFFFFFFF;
+    --bg-color: #FFFFFFFF;
     --animation: .15s ease;
     --page-animation-duration: .3s;
     --page-animation: var(--page-animation-duration) ease;
