@@ -157,8 +157,8 @@
           }).showProgress();
         } else {
           mainButton.setParams({
-            is_visible: !!Cafe.canPay,
-            text: 'PAY ' + Cafe.formatPrice(Cafe.totalPrice),
+            is_visible: false,
+            text: 'Click (-) Button',
             color: '#31b545'
           }).hideProgress();
         }
