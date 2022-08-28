@@ -31,8 +31,8 @@ body {
     cursor: default;
   }
   html.dark body {
-    --block-bg-color: var(--tg-theme-bg-color);
-    --bg-color: #0f0f0f;
+    --block-bg-color: #FFFFFFFF;
+    --bg-color:#FFFFFFFF;
     --text-color: #fff;
     --page-hint-color: #9b9ba1;
     --hint-color: #64666d;
