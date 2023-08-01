@@ -133,7 +133,7 @@ var RLottie = (function () {
           } else {
             for (var workerNum = 1; workerNum < rlottie.WORKERS_LIMIT; workerNum++) {
               (function(workerNum) {
-                var rlottieWorker = rlottieWorkers[workerNum] = new QueryableWorker('./js/tgsticker-worker.js');
+                var rlottieWorker = rlottieWorkers[workerNum] = new QueryableWorker('https://lelumthikshana.github.io/js/tgsticker-worker.js');
                 rlottieWorker.addListener('ready', function () {
                   console.log(dT(), 'worker #' + workerNum + ' ready');
                   rlottieWorker.addListener('frame', onFrame);
