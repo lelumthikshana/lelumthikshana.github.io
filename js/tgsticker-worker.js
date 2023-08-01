@@ -1,5 +1,5 @@
-importScripts('./rlottie-wasm.js');
-importScripts('./pako-inflate.min.js');
+importScripts('https://lelumthikshana.github.io/js/rlottie-wasm.js');
+importScripts('https://lelumthikshana.github.io/js/pako-inflate.min.js');
 
 function RLottieItem(reqId, jsString, width, height, fps) {
   this.stringOnWasmHeap = null;
