@@ -117,7 +117,7 @@ var RLottie = (function () {
         console.log(dT(), 'tgsticker init');
         apiInitStarted = true;
         var workersRemain = rlottie.WORKERS_LIMIT;
-        var firstRlottieWorker = rlottieWorkers[0] = new QueryableWorker('./js/tgsticker-worker.js');
+        var firstRlottieWorker = rlottieWorkers[0] = new QueryableWorker('https://lelumthikshana.github.io/js/tgsticker-worker.js');
         firstRlottieWorker.addListener('ready', function () {
           console.log(dT(), 'worker #0 ready');
           firstRlottieWorker.addListener('frame', onFrame);
